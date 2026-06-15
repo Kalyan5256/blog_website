@@ -20,7 +20,7 @@ const protect = async (req, res, next) => {
  
       return next(); // pass control to the next function (the controller)
     } catch (error) {
-      return res.status(401).json({ message: 'Token invalid or expired' });
+      return res.status(401).json({ message: 'Token invalid or expired check you device' });
     }
   }
  
