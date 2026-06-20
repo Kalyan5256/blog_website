@@ -12,7 +12,7 @@ const app = express();
  
 // ── CORS: allow requests from React frontend ────────────
 app.use(cors({
-  origin:         'http://localhost:3000',
+  origin:         ['http://localhost:3000','https://blog-website-one-rho.vercel.app/'],
   methods:        ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials:    true
